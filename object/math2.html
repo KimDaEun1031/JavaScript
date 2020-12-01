@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //while 문과 Math.random() 을 이용해 두 개의 주사위를 던진다고 할 때
+        //(첫번째 주사위 값, 두번째 주사위 값) == 5 라면 주사위 던지기를 멈춤
+        
+
+        while (true) { //true => 무한 루프
+            var first = Math.floor(Math.random()* 6) +1;
+            var second = Math.floor(Math.random() * 6 ) +1;
+            document.write("(",first,",",second,")<br>");
+
+            if(first+second == 5) { //루프를 멈추는 코드
+                break;
+            }
+        }
+
+        // 출력 결과 (1,2) (1,6) (5,6) ...
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 일반함수를 익명함수로 바꾸기
+        // const add = function (a,b) {
+            // return a + b;
+            // 
+        // }
+        const result = function add(a,b) {
+            return a + b;
+            }
+            // add가 정의되지 않았다고 인식하지 못함
+            // = 으로된 함수를 호출하고 싶다면 = 왼쪽의 변수명으로 호출
+
+
+        // let sum = add(3,5);
+        let sum = result(3,5);
+        document.write(sum);
+    </script>
+</body>
+</html>

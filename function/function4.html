@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 익명 함수 : 이름이 없는 함수
+         특징 : 호이스팅이 안됨 -->
+    <script>
+        const output = function() {
+            for(var i=1; i<=10; i++) {
+                document.write(i+"<br>");
+            }
+        };
+        output();
+    </script>
+</body>
+</html>

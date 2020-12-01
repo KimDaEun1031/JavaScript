@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 사용자에게 국어, 영어, 수학 점수를 입력 받아 평균을 구한 뒤
+        // a,b,c,d,e 등급 출력하기
+        let lang = Number(prompt("국어 점수를 입력하세요."));
+        let math = Number(prompt("수학 점수를 입력하세요."));
+        let eng = Number(prompt("영어 점수를 입력하세요."));
+
+        let arg = (lang+math+eng)/3;
+        document.write(arg);
+
+        if(arg>=90) {
+            document.write(A);
+        } else if(arg>=80) {
+            document.write(B);
+        }
+        else if(arg>=70) {
+            document.write(C);
+        }
+        else if(arg>=60) {
+            document.write(D);
+        } else {
+            document.write(E);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1~100까지 합 구해서 출력
+        var sum = 0;
+        for(var i=1;i<=100; i++) {
+            sum += i;
+        }
+        document.write("1~100까지의 합은 " + sum + "<br>")
+        document.write("<hr>");
+        //최솟값과 최대값 구해서 출력
+        let numArr = [52,273,586,32,57,103,312,2];
+        
+        let min = 999999;
+        let max = 0;
+        for(var i in numArr) {
+            if(numArr[i]>max) {
+                max = numArr[i];
+            }
+            if(numArr[i]<min) {
+                min = numArr[i];
+            }
+        }
+        document.write("최대값 : " +max+ "<br>")
+        document.write("최솟값 : " +min+ "<br>")
+    </script>
+</body>
+</html>

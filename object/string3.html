@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //이메일을 입력받아서 중간에 @가 들어있는지 확인하기
+        //있는지 없는지 확인하기 위한 스트링 함수는 indexof가 가장 좋다
+        //들어있지 않다면 다시 이메일 입력받기 => function
+      
+        function emailcheck() {
+                var email = new String(prompt("이메일을 입력하세요."))
+            if(email.indexOf("@")==-1) {
+                alert("이메일을 다시 입력하세요.")
+                emailcheck();
+            } else {
+                document.write("이메일 : ",email)
+            }       
+        }
+        
+        emailcheck();
+
+    </script>
+</body>
+</html>
