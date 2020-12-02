@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom복습-이미지변경</title>
+</head>
+<body>
+    <img src="cat.jpg" alt="고양이사진"> <!--원본 이미지-->
+    <button type="button" onclick="changeImg()">클릭</button>
+    <script>
+
+        function changeImg() {
+            //이미지 변경 
+            let img = document.querySelector("img");
+            img.src = "yuki.jpg"; //가장 쉬운 변경법           
+        }
+
+    </script>
+</body>
+</html>

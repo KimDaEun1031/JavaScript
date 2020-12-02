@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom복습-문자변경</title>
+</head>
+<body>
+    <div id="ex">
+        div로 선언된 영역
+    </div>
+    <a href="#" onclick="get()">div 요소 내용 출력</a>
+    <a href="#" onclick="set()">div 요소 내용 변경</a>
+    <script>
+        let exam = document.getElementById("ex");
+        function get() {
+            // alert("get()");
+            //ex 영역을 가져와서 해당 요소의 텍스트 노드 내용 출력           
+            alert(exam.innerText); //innerHTML도 가능
+        }
+        function set() {
+            // alert("set()");
+            //ex 영역을 가져와서 해당 요소의 텍스트 노드 내용 변경 - 변경되었습니다라는 내용으로 변경            
+            exam.innerText="변경되었습니다."; 
+        }
+    </script>
+</body>
+</html>

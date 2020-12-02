@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create1</title>
+  </head>
+  <body>
+    <script>
+      // <img src='cat.jpg' alt='고양이'> 생성
+      // ① <img> 태그 생성하기
+      let img = document.createElement("img");
+      // ② 속성 부여하기
+      // img.src = "cat.jpg";
+      // img.alt = "고양이";
+      img.setAttribute("src", "cat.jpg");
+      img.setAttribute("alt", "강아지");
+      // ④ 지정된 영역에 삽입
+      document.body.appendChild(img);
+    </script>
+  </body>
+</html>
